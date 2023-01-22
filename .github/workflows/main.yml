@@ -72,6 +72,6 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
-            sudo docker pull olesyachu/infra_actions:latest
+            sudo docker pull olesyachu/infra_actions:v2.01.2023
             sudo docker stop $(sudo docker ps -a -q)
             sudo docker run --rm -d -p 5000:5000 olesyachu/infra_actions:latest
