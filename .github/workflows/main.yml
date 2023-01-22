@@ -57,8 +57,7 @@ jobs:
         uses: docker/build-push-action@v2 
         with:
           push: true
-          tags: olesyachu/infra_actions:latest
-
+          tags: olesyachu/infra_actions:v2.01.2023
 
   deploy:
     runs-on: ubuntu-latest
